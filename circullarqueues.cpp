@@ -128,10 +128,15 @@ int main() {
                     return 0;
                 }
                 default: {
-                    cout << "Invalid option!" << endl
+                    cout << "Invalid option!" << endl;
+                    break;
                 }
             }
+            catch (expection& e) {
+                cout << "Check for values entered." << endl;
+            }
         }
+        return 0;
     }
     
 }
