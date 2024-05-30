@@ -99,32 +99,31 @@ int main() {
     Queues  q;
     char ch;
 
-    while (true)
-    {
+        while (true) {
         try {
             cout << "Menu" << endl;
             cout << "1. Implement insert operation" << endl;
             cout << "2. Implement delete operation" << endl;
             cout << "3. Display Values" << endl;
             cout << "4. Exit" << endl;
-            cout << "Enter your choice (1 -4): " << endl;
+            cout << "Enter your choice (1-4): ";
             cin >> ch;
             cout << endl;
 
-            switch () {
-                case '1' : {
+            switch (ch) {
+                case '1': {
                     q.insert();
                     break;
                 }
-                case '2' : {
+                case '2': {
                     q.remove();
                     break;
                 }
-                case '3' : {
+                case '3': {
                     q.display();
                     break;
                 }
-                case '4' : {
+                case '4': {
                     return 0;
                 }
                 default: {
@@ -132,11 +131,10 @@ int main() {
                     break;
                 }
             }
-            catch (expection& e) {
-                cout << "Check for values entered." << endl;
-            }
+        } catch (exception& e) {
+            cout << "Check for values entered." << endl;
         }
-        return 0;
     }
-    
+
+    return 0;
 }
